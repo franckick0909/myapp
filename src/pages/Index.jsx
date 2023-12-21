@@ -1,5 +1,6 @@
 import Nav from '../components/Nav';
 import Sidebar from '../components/Sidebar';
+import React from 'react';
 
 const Index = () => {
     return (
