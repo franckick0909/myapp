@@ -1,0 +1,46 @@
+@import '../settings';
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $bg-1;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    border: 0.1rem solid $color-3;
+
+    h1{
+        font-size: 17rem;
+        font-weight: 1000;
+        background: linear-gradient(to right, $color-3, $color-5);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    h2{
+        font-size: 3rem;
+        font-weight: 700;
+        color: $color-2;
+        margin-bottom: 4rem;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: $color-5;
+        transition: color 0.2s ease;
+        &:hover{
+            color: $color-4;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        border-bottom: 1px solid $color-3;
+    }
+}

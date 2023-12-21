@@ -1,0 +1,101 @@
+@import "../settings";
+
+.sidebar{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.459);
+    z-index: 1000;
+    // transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+
+    &.active{
+        transform: translateX(0);
+    }
+
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: $color-5;
+            font-size: 1.3rem;
+            font-weight: 400;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: $color-3;
+              }
+        }
+    }
+
+
+}
+
+.sidebar__button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1.5rem;
+    top: 1.2rem;
+    cursor: pointer;
+    color: $color-6;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    z-index: 1200;
+    border: none;
+    display: none;
+
+    @media screen and (max-width: 768px){
+        display: flex;
+    }
+
+    &__bar{
+        width: 100%;
+        height: 2px;
+        background-color: $color-6;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        transform-origin: left;
+        transform: scaleX(1);
+        &:before{
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-3;
+            transition: all 0.3s ease-in-out;
+            transform-origin: left;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-7;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+
+    }
+
+
+
+
+
+}
