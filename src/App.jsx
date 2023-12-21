@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="about" element={<Error404 />} />
+        <Route path="error" element={<Error404 />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

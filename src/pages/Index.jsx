@@ -7,7 +7,10 @@ const Index = () => {
             <Nav />
             <Sidebar />
 
-            <section id='Home'>Home</section>
+            <section id='Home'>
+                <h1 style={{ fontSize: "4.375rem"}}>Home</h1>
+            </section>
+            
             <section id='About'>About</section>
             <section id='Projets'>Projets</section>
             <section id='Portfolio'>Portfolio</section>
